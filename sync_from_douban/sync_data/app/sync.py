@@ -354,21 +354,26 @@ def init_simple_database(config_dict, media_type, token, page_id):
         log_detail.error(f"【Notion】- 尝试创建<{media_type}> 数据库时失败。错误：{err}")
 
 
+#def merge_old_cfg():
+#    old_cfg = Config().get_auto_config()
+#    _cfg = Config().get_config()
+#    try:
+# #       if old_cfg is None:
+#            log_detail.info("【Config】旧配置为空，退出合并程序")
+#        else:
+#            old_cfg_keys = list(old_cfg.keys())
+#            for i in old_cfg_keys:
+#                if old_cfg[i] is None:
+#                    log_detail.info(f"【Config】旧配置{i}不存在")
+#                else:
+#                    _cfg['notion'][i] = old_cfg[i]
+#                    log_detail.info(f"【Config】合并{i}成功")
+#        Config().save_config(_cfg)
+#        log_detail.info(f"【Config】旧配置已合并至[config.yaml]")
+#    except Exception as err:
+#        log_detail.error(f"【Config】合并旧配置时出错：{err}")
+
 def merge_old_cfg():
-    old_cfg = Config().get_auto_config()
-    _cfg = Config().get_config()
-    try:
-        if old_cfg is None:
-            log_detail.info("【Config】旧配置为空，退出合并程序")
-        else:
-            old_cfg_keys = list(old_cfg.keys())
-            for i in old_cfg_keys:
-                if old_cfg[i] is None:
-                    log_detail.info(f"【Config】旧配置{i}不存在")
-                else:
-                    _cfg['notion'][i] = old_cfg[i]
-                    log_detail.info(f"【Config】合并{i}成功")
-        Config().save_config(_cfg)
-        log_detail.info(f"【Config】旧配置已合并至[config.yaml]")
-    except Exception as err:
-        log_detail.error(f"【Config】合并旧配置时出错：{err}")
+    cfg = Config().get_config()
+    cfg['notion']['book_database_id']='1234900'
+    Config().save_config(cfg)
