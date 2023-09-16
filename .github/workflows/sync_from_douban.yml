@@ -58,4 +58,5 @@ jobs:
         
     - name: sync_data
       run:
-        python sync_from_douban/run.py -m book -s all
+        cd sync_from_douban
+        python run.py -m book -s all
