@@ -53,10 +53,8 @@ jobs:
       
     - name: create config
       run:
-        echo $GITHUB_ENV
         python sync_from_douban/run.py -f config
         
     - name: sync_data
       run:
-        cd sync_from_douban
-        python run.py -m book -s all
+        python sync_from_douban/run.py -m book -s all
