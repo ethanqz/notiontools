@@ -12,17 +12,6 @@ on:
 permissions:
   contents: read
 
-env:
-  USER_AGENT: ${{ secrets.USER_AGENT }}
-  USER_COOKIE: ${{ secrets.USER_COOKIE }}
-  DOUBAN_USER_ID: ${{ secrets.DOUBAN_USER_ID }}
-  DOUBAN_DAY: ${{ secrets.DOUBAN_DAY }}
-  NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-  NOTION_BOOKS_DB: ${{ secrets.NOTION_BOOKS_DB }}
-  NOTION_MUSIC_DB: ${{ secrets.NOTION_MUSIC_DB }}
-  NOTION_MOVIE_DB: ${{ secrets.NOTION_MOVIE_DB }}
-  NOTION_GAME_DB: ${{ secrets.NOTION_GAME_DB }}
-
 jobs:
   build:
 
@@ -45,6 +34,7 @@ jobs:
         DOUBAN_USER_ID: ${{ secrets.DOUBAN_USER_ID }}
         DOUBAN_DAY: ${{ secrets.DOUBAN_DAY }}
         NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        NOTION_PAGE_ID: ${{ secrets.NOTION_PAGE_ID }}
         NOTION_BOOKS_DB: ${{ secrets.NOTION_BOOKS_DB }}
         NOTION_MUSIC_DB: ${{ secrets.NOTION_MUSIC_DB }}
         NOTION_MOVIE_DB: ${{ secrets.NOTION_MOVIE_DB }}
