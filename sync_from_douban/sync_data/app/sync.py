@@ -13,7 +13,7 @@ from sync_data.tool.notion.databases import create_database
 from sync_data.tool.notion.query import get_notion_media_status
 from sync_data.utils import log_detail
 from sync_data.utils.config import Config
-
+import os
 
 def get_monitoring_and_update(instance,
                               user_id,
@@ -374,6 +374,32 @@ def init_simple_database(config_dict, media_type, token, page_id):
 #        log_detail.error(f"【Config】合并旧配置时出错：{err}")
 
 def merge_old_cfg():
+    #root env
+    USER_AGENT = os.environ['USER_AGENT']
+    # douban env
+    USER_COOKIE = os.environ['USER_COOKIE']
+    DOUBAN_USER_ID = os.environ['DOUBAN_USER_ID']
+    DOUBAN_DAY = os.environ['DOUBAN_DAY']
+    # notion env
+    NOTION_TOKEN = os.environ['NOTION_TOKEN']
+    NOTION_PAGE_ID = os.environ['NOTION_PAGE_ID']
+    NOTION_BOOKS_DB = os.environ['NOTION_BOOKS_DB']
+    NOTION_MUSIC_DB = os.environ['NOTION_MUSIC_DB']
+    NOTION_MOVIE_DB = os.environ['NOTION_MOVIE_DB']
+    NOTION_GAME_DB = os.enviton['NOTION_GAME_DB']
+
+
     cfg = Config().get_config()
-    cfg['notion']['book_database_id']='1234900'
+    cfg['user_agent'] = USER_AGENT
+
+    cfg['douban']['user_id'] = DOUBAN_USER_ID
+    cfg['douban']['day'] = DOUBAN_DAY
+    cfg['douban']['cookies'] = USER_COOKIE
+
+    cfg['notion']['token'] = NOTION_TOKEN
+    cfg['notion']['page_id'] = NOTION_PAGE_ID
+    cfg['notion']['book_database_id'] = NOTION_BOOKS_DB
+    cfg['notion']['movie_database_id'] = NOTION_MOVIE_DB
+    cfg['notion']['music_database_id'] = NOTION_MUSIC_DB
+    cfg['notion']['game_database_id'] = NOTION_GAME_DB
     Config().save_config(cfg)
