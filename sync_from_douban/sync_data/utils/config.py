@@ -22,8 +22,8 @@ class Config(object):
     __config_path = None
 
     def __init__(self):
-        # self.__config_path = os.path.abspath(os.path.join(os.getcwd(), "./doc/config.yaml"))
-        self.__config_path = "./doc/config.yaml"
+        self.__config_path = os.path.abspath(os.path.join(os.getcwd(), "./doc/config.yaml"))
+        #self.__config_path = "./doc/config.yaml"
         # print("获取配置文件路径：%s" % self.__config_path)
         self.load_config()
 
