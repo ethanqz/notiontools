@@ -6,11 +6,11 @@ app:
   # FILE：保存日志到文件，则下面的log_path必须配置
   # CONSOLE：打印到控制台
   # 【必填】日志记录类型：SERVER、FILE、CONSOLE，默认设置为CONSOLE；
-  log_type: 'CONSOLE'
+  log_type: 'FILE'
 
   # 日志文件的路径，log_type为FILE时生效
   # 如 windows路径： 'D:\Development\SourceCode\notion_sync_douban\logs'
-  log_path: ''
+  log_path: './logs'
 
   # 群晖日志中心IP和端口，log_type为SERVER时生效。端口一般是514，只需要改动IP为群晖的IP。
   log_server: 127.0.0.1:514

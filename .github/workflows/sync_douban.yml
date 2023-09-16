@@ -11,6 +11,7 @@ env:
   DOUBAN_USER_ID: ${{ secrets.DOUBAN_USER_ID }}
   DOUBAN_DAY: ${{ secrets.DOUBAN_DAY }}
   NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+  NOTION_PAGE_ID: ${{ secrets.NOTION_PAGE_ID }}
   NOTION_BOOKS_DB: ${{ secrets.NOTION_BOOKS_DB }}
   NOTION_MUSIC_DB: ${{ secrets.NOTION_MUSIC_DB }}
   NOTION_MOVIE_DB: ${{ secrets.NOTION_MOVIE_DB }}
