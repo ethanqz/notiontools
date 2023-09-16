@@ -38,9 +38,33 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r sync_from_douban/requirements.txt
+    - name: Set environment variable 
+      env: 
+        USER_AGENT: ${{ secrets.USER_AGENT }}
+        USER_COOKIE: ${{ secrets.USER_COOKIE }}
+        DOUBAN_USER_ID: ${{ secrets.DOUBAN_USER_ID }}
+        DOUBAN_DAY: ${{ secrets.DOUBAN_DAY }}
+        NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        NOTION_BOOKS_DB: ${{ secrets.NOTION_BOOKS_DB }}
+        NOTION_MUSIC_DB: ${{ secrets.NOTION_MUSIC_DB }}
+        NOTION_MOVIE_DB: ${{ secrets.NOTION_MOVIE_DB }}
+        NOTION_GAME_DB: ${{ secrets.NOTION_GAME_DB }}
+
+      run: 
+        echo "USER_AGENT=$USER_AGENT" >> $GITHUB_ENV
+        echo "USER_COOKIE=$USER_COOKIE" >> $GITHUB_ENV
+        echo "DOUBAN_USER_ID=$DOUBAN_USER_ID" >> $GITHUB_ENV
+        echo "DOUBAN_DAY=$DOUBAN_DAY" >> $GITHUB_ENV
+        echo "NOTION_TOKEN=$NOTION_TOKEN" >> $GITHUB_ENV
+        echo "NOTION_BOOKS_DB=$NOTION_BOOKS_DB" >> $GITHUB_ENV
+        echo "NOTION_MUSIC_DB=$NOTION_MUSIC_DB" >> $GITHUB_ENV
+        echo "NOTION_MOVIE_DB=$NOTION_MOVIE_DB" >> $GITHUB_ENV
+        echo "NOTION_GAME_DB=$NOTION_GAME_DB" >> $GITHUB_ENV
+      
     - name: create config
       run:
         python sync_from_douban/create_config.py env
+        echo $GITHUB_ENV
     - name: sync_data
       run:
         python sync_from_douban/run.py -m book -s all
