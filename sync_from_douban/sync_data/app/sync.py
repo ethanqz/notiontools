@@ -376,8 +376,10 @@ def init_simple_database(config_dict, media_type, token, page_id):
 def merge_old_cfg():
     #root env
     USER_AGENT = os.environ['USER_AGENT']
+    print(USER_AGENT)
     # douban env
     USER_COOKIE = os.environ['USER_COOKIE']
+    print(USER_COOKIE)
     DOUBAN_USER_ID = os.environ['DOUBAN_USER_ID']
     DOUBAN_DAY = os.environ['DOUBAN_DAY']
     # notion env
