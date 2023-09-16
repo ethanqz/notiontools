@@ -6,7 +6,7 @@ app:
   # FILE：保存日志到文件，则下面的log_path必须配置
   # CONSOLE：打印到控制台
   # 【必填】日志记录类型：SERVER、FILE、CONSOLE，默认设置为CONSOLE；
-  log_type: 'FILE'
+  log_type: 'CONSOLE'
 
   # 日志文件的路径，log_type为FILE时生效
   # 如 windows路径： 'D:\Development\SourceCode\notion_sync_douban\logs'
