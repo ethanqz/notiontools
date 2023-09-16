@@ -388,7 +388,7 @@ def merge_old_cfg():
     NOTION_BOOKS_DB = os.environ['NOTION_BOOKS_DB']
     NOTION_MUSIC_DB = os.environ['NOTION_MUSIC_DB']
     NOTION_MOVIE_DB = os.environ['NOTION_MOVIE_DB']
-    NOTION_GAME_DB = os.enviton['NOTION_GAME_DB']
+    NOTION_GAME_DB = os.environ['NOTION_GAME_DB']
 
 
     cfg = Config().get_config()
