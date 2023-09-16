@@ -1,0 +1,90 @@
+2023-09-16 16:18:51,398	File "log_detail.py",line 72	INFO: ----开始拉取数据----
+2023-09-16 16:18:51,398	File "log_detail.py",line 72	INFO: 【RUN】开始获取book的do状态信息
+2023-09-16 16:18:51,403	File "log_detail.py",line 72	INFO: 【Config】读取用户配置的文件[config.yaml]
+2023-09-16 16:18:51,403	File "log_detail.py",line 72	INFO: 【Config】- 取得浏览器 user-agent：Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.125 Safari/537.36
+2023-09-16 16:18:51,403	File "log_detail.py",line 72	INFO: 【Config】- 取得用户 id：160****31
+2023-09-16 16:18:51,403	File "log_detail.py",line 72	INFO: 【Config】- 取得监控日期：0
+2023-09-16 16:18:51,403	File "log_detail.py",line 72	INFO: 【Config】- 取得 notion 的 token：secret_OpGukq*************************QjursZx7TCsI
+2023-09-16 16:18:51,403	File "log_detail.py",line 72	INFO: 【Notion】- 取得notion的database_id：4ce692f68***************26c9b615
+2023-09-16 16:18:51,403	File "log_detail.py",line 72	INFO: 【DouBan】配置用户自定义cookie，重要用户信息已隐藏
+2023-09-16 16:18:57,625	File "log_detail.py",line 72	INFO: 【RUN】请求url，获取返回值
+2023-09-16 16:18:57,625	File "log_detail.py",line 72	INFO: 【DouBan】访问book中标记为do的状态第1页数据完成
+2023-09-16 16:18:57,637	File "log_detail.py",line 72	INFO: 【DouBan】- 第1页共有媒体个数：1
+2023-09-16 16:18:57,637	File "log_detail.py",line 72	INFO: 【DouBan】- 第1页监控日期内数据个数：1
+2023-09-16 16:18:57,637	File "log_detail.py",line 72	INFO: 【DouBan】- 是否继续访问下一页：False
+2023-09-16 16:18:59,093	File "log_detail.py",line 72	INFO: 【RUN】notion中含有本条数据，已跳过！媒体链接：https://book.douban.com/subject/30216767/
+2023-09-16 16:18:59,094	File "log_detail.py",line 72	INFO: 【RUN】完成第1页媒体数据库的导入！
+2023-09-16 16:18:59,094	File "log_detail.py",line 72	INFO: 【RUN】 - 第1页监控数据个数：1
+2023-09-16 16:18:59,094	File "log_detail.py",line 72	INFO: 【RUN】 - 第1页跳过数据个数：1
+2023-09-16 16:18:59,094	File "log_detail.py",line 72	INFO: 【RUN】 - 第1页解析失败个数：0
+2023-09-16 16:18:59,094	File "log_detail.py",line 72	INFO: 【RUN】 - 第1页导入失败个数：0
+2023-09-16 16:18:59,094	File "log_detail.py",line 72	INFO: --------------------------------------------------
+2023-09-16 16:18:59,094	File "log_detail.py",line 72	INFO: 【RUN】您的标记 <do> 状态的 <book> 已导入notion
+2023-09-16 16:18:59,094	File "log_detail.py",line 72	INFO: 【RUN】 - 共计访问页数：1
+2023-09-16 16:18:59,094	File "log_detail.py",line 72	INFO: 【RUN】 -- 访问数据个数：1
+2023-09-16 16:18:59,094	File "log_detail.py",line 72	INFO: 【RUN】 -- 监控数据个数：1
+2023-09-16 16:18:59,094	File "log_detail.py",line 72	INFO: 【RUN】 -- 跳过数据个数：1
+2023-09-16 16:18:59,094	File "log_detail.py",line 72	INFO: 【RUN】 -- 导入数据个数：0
+2023-09-16 16:18:59,094	File "log_detail.py",line 72	INFO: 【RUN】 -- 解析失败个数：0
+2023-09-16 16:18:59,094	File "log_detail.py",line 72	INFO: 【RUN】 -- 导入失败个数：0
+2023-09-16 16:18:59,094	File "log_detail.py",line 72	INFO: ----开始拉取数据----
+2023-09-16 16:18:59,094	File "log_detail.py",line 72	INFO: 【RUN】开始获取book的wish状态信息
+2023-09-16 16:18:59,099	File "log_detail.py",line 72	INFO: 【Config】读取用户配置的文件[config.yaml]
+2023-09-16 16:18:59,099	File "log_detail.py",line 72	INFO: 【Config】- 取得浏览器 user-agent：Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.125 Safari/537.36
+2023-09-16 16:18:59,099	File "log_detail.py",line 72	INFO: 【Config】- 取得用户 id：160****31
+2023-09-16 16:18:59,099	File "log_detail.py",line 72	INFO: 【Config】- 取得监控日期：0
+2023-09-16 16:18:59,099	File "log_detail.py",line 72	INFO: 【Config】- 取得 notion 的 token：secret_OpGukq*************************QjursZx7TCsI
+2023-09-16 16:18:59,099	File "log_detail.py",line 72	INFO: 【Notion】- 取得notion的database_id：4ce692f68***************26c9b615
+2023-09-16 16:18:59,099	File "log_detail.py",line 72	INFO: 【DouBan】配置用户自定义cookie，重要用户信息已隐藏
+2023-09-16 16:19:02,489	File "log_detail.py",line 72	INFO: 【RUN】请求url，获取返回值
+2023-09-16 16:19:02,490	File "log_detail.py",line 72	INFO: 【DouBan】访问book中标记为wish的状态第1页数据完成
+2023-09-16 16:19:02,502	File "log_detail.py",line 72	INFO: 【DouBan】- 第1页共有媒体个数：2
+2023-09-16 16:19:02,502	File "log_detail.py",line 72	INFO: 【DouBan】- 第1页监控日期内数据个数：2
+2023-09-16 16:19:02,503	File "log_detail.py",line 72	INFO: 【DouBan】- 是否继续访问下一页：False
+2023-09-16 16:19:05,493	File "log_detail.py",line 72	INFO: 【RUN】notion中含有本条数据，已跳过！媒体链接：https://book.douban.com/subject/4822685/
+2023-09-16 16:19:15,749	File "log_detail.py",line 72	INFO: 【RUN】notion中含有本条数据，已跳过！媒体链接：https://book.douban.com/subject/30259720/
+2023-09-16 16:19:15,749	File "log_detail.py",line 72	INFO: 【RUN】完成第1页媒体数据库的导入！
+2023-09-16 16:19:15,749	File "log_detail.py",line 72	INFO: 【RUN】 - 第1页监控数据个数：2
+2023-09-16 16:19:15,749	File "log_detail.py",line 72	INFO: 【RUN】 - 第1页跳过数据个数：2
+2023-09-16 16:19:15,749	File "log_detail.py",line 72	INFO: 【RUN】 - 第1页解析失败个数：0
+2023-09-16 16:19:15,749	File "log_detail.py",line 72	INFO: 【RUN】 - 第1页导入失败个数：0
+2023-09-16 16:19:15,749	File "log_detail.py",line 72	INFO: --------------------------------------------------
+2023-09-16 16:19:15,749	File "log_detail.py",line 72	INFO: 【RUN】您的标记 <wish> 状态的 <book> 已导入notion
+2023-09-16 16:19:15,749	File "log_detail.py",line 72	INFO: 【RUN】 - 共计访问页数：1
+2023-09-16 16:19:15,749	File "log_detail.py",line 72	INFO: 【RUN】 -- 访问数据个数：2
+2023-09-16 16:19:15,750	File "log_detail.py",line 72	INFO: 【RUN】 -- 监控数据个数：2
+2023-09-16 16:19:15,750	File "log_detail.py",line 72	INFO: 【RUN】 -- 跳过数据个数：2
+2023-09-16 16:19:15,750	File "log_detail.py",line 72	INFO: 【RUN】 -- 导入数据个数：0
+2023-09-16 16:19:15,750	File "log_detail.py",line 72	INFO: 【RUN】 -- 解析失败个数：0
+2023-09-16 16:19:15,750	File "log_detail.py",line 72	INFO: 【RUN】 -- 导入失败个数：0
+2023-09-16 16:19:15,750	File "log_detail.py",line 72	INFO: ----开始拉取数据----
+2023-09-16 16:19:15,750	File "log_detail.py",line 72	INFO: 【RUN】开始获取book的collect状态信息
+2023-09-16 16:19:15,755	File "log_detail.py",line 72	INFO: 【Config】读取用户配置的文件[config.yaml]
+2023-09-16 16:19:15,755	File "log_detail.py",line 72	INFO: 【Config】- 取得浏览器 user-agent：Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.125 Safari/537.36
+2023-09-16 16:19:15,755	File "log_detail.py",line 72	INFO: 【Config】- 取得用户 id：160****31
+2023-09-16 16:19:15,755	File "log_detail.py",line 72	INFO: 【Config】- 取得监控日期：0
+2023-09-16 16:19:15,755	File "log_detail.py",line 72	INFO: 【Config】- 取得 notion 的 token：secret_OpGukq*************************QjursZx7TCsI
+2023-09-16 16:19:15,755	File "log_detail.py",line 72	INFO: 【Notion】- 取得notion的database_id：4ce692f68***************26c9b615
+2023-09-16 16:19:15,755	File "log_detail.py",line 72	INFO: 【DouBan】配置用户自定义cookie，重要用户信息已隐藏
+2023-09-16 16:19:36,019	File "log_detail.py",line 72	INFO: 【RUN】请求url，获取返回值
+2023-09-16 16:19:36,020	File "log_detail.py",line 72	INFO: 【DouBan】访问book中标记为collect的状态第1页数据完成
+2023-09-16 16:19:36,034	File "log_detail.py",line 72	INFO: 【DouBan】- 第1页共有媒体个数：2
+2023-09-16 16:19:36,035	File "log_detail.py",line 72	INFO: 【DouBan】- 第1页监控日期内数据个数：2
+2023-09-16 16:19:36,035	File "log_detail.py",line 72	INFO: 【DouBan】- 是否继续访问下一页：False
+2023-09-16 16:19:38,037	File "log_detail.py",line 72	INFO: 【RUN】notion中含有本条数据，已跳过！媒体链接：https://book.douban.com/subject/25829693/
+2023-09-16 16:19:39,956	File "log_detail.py",line 72	INFO: 【RUN】notion中含有本条数据，已跳过！媒体链接：https://book.douban.com/subject/36104107/
+2023-09-16 16:19:39,956	File "log_detail.py",line 72	INFO: 【RUN】完成第1页媒体数据库的导入！
+2023-09-16 16:19:39,956	File "log_detail.py",line 72	INFO: 【RUN】 - 第1页监控数据个数：2
+2023-09-16 16:19:39,956	File "log_detail.py",line 72	INFO: 【RUN】 - 第1页跳过数据个数：2
+2023-09-16 16:19:39,956	File "log_detail.py",line 72	INFO: 【RUN】 - 第1页解析失败个数：0
+2023-09-16 16:19:39,956	File "log_detail.py",line 72	INFO: 【RUN】 - 第1页导入失败个数：0
+2023-09-16 16:19:39,956	File "log_detail.py",line 72	INFO: --------------------------------------------------
+2023-09-16 16:19:39,956	File "log_detail.py",line 72	INFO: 【RUN】您的标记 <collect> 状态的 <book> 已导入notion
+2023-09-16 16:19:39,956	File "log_detail.py",line 72	INFO: 【RUN】 - 共计访问页数：1
+2023-09-16 16:19:39,956	File "log_detail.py",line 72	INFO: 【RUN】 -- 访问数据个数：2
+2023-09-16 16:19:39,956	File "log_detail.py",line 72	INFO: 【RUN】 -- 监控数据个数：2
+2023-09-16 16:19:39,956	File "log_detail.py",line 72	INFO: 【RUN】 -- 跳过数据个数：2
+2023-09-16 16:19:39,956	File "log_detail.py",line 72	INFO: 【RUN】 -- 导入数据个数：0
+2023-09-16 16:19:39,956	File "log_detail.py",line 72	INFO: 【RUN】 -- 解析失败个数：0
+2023-09-16 16:19:39,956	File "log_detail.py",line 72	INFO: 【RUN】 -- 导入失败个数：0
+2023-09-16 16:19:39,956	File "log_detail.py",line 72	INFO: 【RUN】程序结束！

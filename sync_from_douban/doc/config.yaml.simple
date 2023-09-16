@@ -1,0 +1,46 @@
+# 配置文件
+# 请依照说明填写各项参数
+
+app:
+  # SERVER：可将日志输出到群晖的日志中心便于查看，必须log_server必须配置
+  # FILE：保存日志到文件，则下面的log_path必须配置
+  # CONSOLE：打印到控制台
+  # 【必填】日志记录类型：SERVER、FILE、CONSOLE，默认设置为CONSOLE；
+  log_type: 'CONSOLE'
+
+  # 日志文件的路径，log_type为FILE时生效
+  # 如 windows路径： 'D:\Development\SourceCode\notion_sync_douban\logs'
+  log_path: ''
+
+  # 群晖日志中心IP和端口，log_type为SERVER时生效。端口一般是514，只需要改动IP为群晖的IP。
+  log_server: 127.0.0.1:514
+
+# 【可选】 建议填写，以免触发触发豆瓣的反爬虫机制浏览器获取
+user_agent : ''
+
+# 豆瓣参数
+douban:
+  # 【必填】
+  user_id: ''
+
+  # 【必填】 1. 填写为0时，监控所有的  | 2. 填写非零的正整数，则监控x天内的。比如填写30，则监控一个月内的；365，则监控一年内的。
+  day:
+
+  # 【可选】从浏览器中获取
+  # 填写后可解决某些导入失败的问题，但有被豆瓣封号的风险，请知悉
+  cookies: ''
+
+# notion获取
+notion:
+  # 打开notion -> setting & Members -> integrations -> 最后一行【Develop your own integrations】
+  # 或者复制此链接 https://www.notion.so/my-integrations 在浏览器打开
+  token: ''
+
+  # 在浏览器打开你要导入的notion页面，复制后面的一串数字
+  page_id: ''
+
+  # 以下为自动配置，请勿改动
+  book_database_id: ''
+  movie_database_id: ''
+  music_database_id: ''
+  game_database_id: ''
