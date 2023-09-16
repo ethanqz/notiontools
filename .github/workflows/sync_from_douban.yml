@@ -41,8 +41,14 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r sync_from_douban/requirements.txt
         
+    - name: generate config
+      run:
+        python run.py -f config
+      working-directory:
+        ./sync_from_douban
+
     - name: sync_data
       run:
-        python run.py -f confige
+        python run.py -m book -s all
       working-directory:
         ./sync_from_douban
