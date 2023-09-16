@@ -43,4 +43,6 @@ jobs:
         
     - name: sync_data
       run:
-        python sync_from_douban/run.py -f config
+        python sync_from_douban/run.py -f confige
+      working-directory:
+        ./sync_from_douban
