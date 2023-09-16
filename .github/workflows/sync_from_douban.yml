@@ -27,18 +27,17 @@ permissions:
 
 jobs:
   build:
-
-    runs-on: fedora-latest
-
-    steps:
     - uses: actions/checkout@v3
-    - name: Set up Python 3.11.4
-      uses: actions/setup-python@v3
+    - name: create config
+      run: cp doc/config.yaml.simple doc/config.yaml
+    - name: install python 3.9
+      uses: actions/setup-python@v4
       with:
-        python-version: "3.11.4"
+        python-version: '3.9'
+        cache: 'pip' # caching pip 
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
+        #python -m pip install --upgrade pip
         pip install -r sync_from_douban/requirements.txt
         
     - name: generate config
