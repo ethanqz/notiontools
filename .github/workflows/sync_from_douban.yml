@@ -43,5 +43,4 @@ jobs:
         
     - name: sync_data
       run:
-        python sync_from_douban/run.py -f configl
-        python sync_from_douban/run.py -m book -s all
+        python sync_from_douban/run.py -f config
