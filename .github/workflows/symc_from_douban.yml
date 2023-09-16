@@ -3,11 +3,10 @@
 
 name: Python application
 
+
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  schedule:
+    - cron: '*/5 * * * *'
 
 permissions:
   contents: read
@@ -63,8 +62,9 @@ jobs:
       
     - name: create config
       run:
-        python sync_from_douban/create_config.py env
         echo $GITHUB_ENV
+        python sync_from_douban/run.py -f config
+        
     - name: sync_data
       run:
         python sync_from_douban/run.py -m book -s all
