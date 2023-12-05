@@ -6,7 +6,7 @@ name: sync_from_douban
 on:
   workflow_dispatch: # manual trigger
   schedule:
-    - cron:  '0/10 * * * *'
+    #- cron:  '0/10 * * * *'
 
 
 env: 
